@@ -47,5 +47,6 @@
     "docsmsft.docs-metadata",
     "blackmist.LinkCheckMD"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

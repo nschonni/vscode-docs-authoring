@@ -23,7 +23,7 @@ module.exports = {
 				tsconfigRootDir: __dirname,
 				project: ['./tsconfig.json']
 			},
-			plugins: ['@typescript-eslint', '@typescript-eslint/tslint', 'import'],
+			plugins: ['@typescript-eslint', 'import'],
 			settings: {
 				'import/resolver': {
 					node: {
@@ -111,15 +111,6 @@ module.exports = {
 				'spaced-comment': ['off', 'never'],
 				'use-isnan': 'error',
 				'valid-typeof': 'off',
-				'@typescript-eslint/tslint/config': [
-					'error',
-					{
-						rules: {
-							'jsdoc-format': true,
-							'no-reference-import': true
-						}
-					}
-				],
 				'@typescript-eslint/unbound-method': 'off',
 				'@typescript-eslint/member-delimiter-style': [
 					'error',
