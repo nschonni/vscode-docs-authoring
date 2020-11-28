@@ -99,7 +99,6 @@ export async function showChooseMetadataCsvDialog(folderPath: string) {
 		canSelectMany: false,
 		defaultUri: Uri.file(folderPath),
 		openLabel: 'Apply Metadata',
-		// tslint:disable-next-line: object-literal-sort-keys
 		filters: {
 			'Supported files': ['csv', 'xls', 'txt']
 		}

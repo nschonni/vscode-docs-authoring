@@ -9,7 +9,6 @@ import {
 import { commands } from 'vscode';
 import * as common from '../../../helper/common';
 
-// tslint:disable-next-line: no-var-requires
 const expect = chai.expect;
 
 suite('Notebook Controller', () => {

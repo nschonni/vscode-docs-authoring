@@ -19,7 +19,6 @@ const unknown = 'unknown';
 export class LinuxDistribution {
 	public constructor(public name: string, public version: string, public idLike?: string[]) {}
 
-	// tslint:disable member-ordering max-classes-per-file
 	public static GetCurrent(): Promise<LinuxDistribution> {
 		// Try /etc/os-release and fallback to /usr/lib/os-release per the synopsis
 		// at https://www.freedesktop.org/software/systemd/man/os-release.html.

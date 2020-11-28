@@ -15,7 +15,6 @@ import {
 
 chai.use(spies);
 
-// tslint:disable-next-line: no-var-requires
 import sinon = require('sinon');
 const expect = chai.expect;
 

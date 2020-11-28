@@ -11,7 +11,6 @@ import {
 import * as common from '../../../helper/common';
 import { loadDocumentAndGetItReady } from '../../test.common/common';
 
-// tslint:disable-next-line: no-var-requires
 const expect = chai.expect;
 
 suite('Link Controller', () => {

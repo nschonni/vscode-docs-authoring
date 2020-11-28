@@ -3,7 +3,6 @@ import { basename, resolve } from 'path';
 import { window, workspace } from 'vscode';
 import { output } from '../helper/common';
 
-/* tslint:disable: no-conditional-assignment */
 const INCLUDE_RE = /\[!include\s*\[\s*.+?\s*]\(\s*(.+?)\s*\)\s*]/i;
 const FRONTMATTER_RE = /^---[\s\S]+?---/gim;
 const ROOTPATH_RE = /.*~/gim;

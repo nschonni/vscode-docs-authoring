@@ -108,8 +108,6 @@ export function tryFindFile(rootPath: string, fileName: string) {
 	return undefined;
 }
 
-/* tslint:disable: one-variable-per-declaration prefer-const variable-name */
-
 export function inline_plugin(md, name, options) {
 	options = options || {};
 	const marker_str = options.marker;

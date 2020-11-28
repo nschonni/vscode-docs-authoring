@@ -14,7 +14,6 @@ export class RedirectionFile implements MasterRedirection {
 	public redirections: any;
 
 	// Members mapping to JSON elements in master redirection file
-	// tslint:disable: variable-name
 	public source_path: string;
 	public redirect_url: string;
 	public redirect_document_id: boolean = false;

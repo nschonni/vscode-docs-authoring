@@ -1,5 +1,3 @@
-/* tslint:disable: one-variable-per-declaration prefer-const variable-name */
-
 export function div_plugin(md, name, options) {
 	options = options || {};
 	const marker_str = options.marker;

@@ -4,7 +4,6 @@ import * as common from '../../../helper/common';
 import * as telemetry from '../../../helper/telemetry';
 import { sleep } from '../../test.common/common';
 
-// tslint:disable-next-line: no-var-requires
 import sinon = require('sinon');
 import { validateRepository } from '../../../controllers/validation-controller';
 

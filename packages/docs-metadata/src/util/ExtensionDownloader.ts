@@ -105,7 +105,6 @@ export class ExtensionDownloader {
 				this.logger.appendLine(errorMessage);
 			})
 			.then(() => {
-				// tslint:disable-next-line: no-string-literal
 				telemetryProps.installStage = installationStage;
 				telemetryProps['platform.architecture'] = platformInfo.architecture;
 				telemetryProps['platform.platform'] = platformInfo.platform;

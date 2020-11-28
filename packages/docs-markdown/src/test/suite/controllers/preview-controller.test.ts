@@ -7,7 +7,6 @@ import * as telemetry from '../../../helper/telemetry';
 import { loadDocumentAndGetItReady, sleep } from '../../test.common/common';
 import * as vscode from 'vscode';
 
-// tslint:disable-next-line: no-var-requires
 import sinon = require('sinon');
 
 const expect = chai.expect;

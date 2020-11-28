@@ -7,7 +7,6 @@
 // import * as assert from 'assert';
 describe('Ensure Chai Mocha Test Samples Run Correctly', () => {
 	it('Hey, true returns true! Incredible.', () => {
-		// tslint:disable-next-line:no-unused-expression
 		expect(true).toBe(true);
 	});
 });

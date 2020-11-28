@@ -82,8 +82,6 @@ export function image_end(md) {
 	md.core.ruler.before('normalize', 'imageclose', importImageEnd);
 }
 
-/* tslint:disable: one-variable-per-declaration prefer-const variable-name */
-
 export function image_plugin(md, name, options) {
 	options = options || {};
 	const marker_str = options.marker;

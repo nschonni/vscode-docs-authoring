@@ -18,7 +18,6 @@ import { loadDocumentAndGetItReady, sleep, sleepTime } from '../../test.common/c
 
 chai.use(spies);
 
-// tslint:disable-next-line: no-var-requires
 import sinon = require('sinon');
 import { has } from 'typescript-collections/dist/lib/util';
 

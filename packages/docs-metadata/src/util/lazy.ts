@@ -3,7 +3,6 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-// tslint:disable variable-name interface-name
 export interface Lazy<T> {
 	readonly value: T;
 	readonly hasValue: boolean;

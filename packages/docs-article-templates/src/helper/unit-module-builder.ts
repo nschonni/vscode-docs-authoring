@@ -275,7 +275,6 @@ export function updateModule(units) {
 		levels: `...`,
 		roles: `...`,
 		products: `...`,
-		// tslint:disable-next-line: object-literal-shorthand
 		units,
 		badge: [`{badge}`]
 	};

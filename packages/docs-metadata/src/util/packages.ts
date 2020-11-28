@@ -15,7 +15,6 @@ import { Logger } from './logger';
 import { getProxyAgent } from './proxy';
 import { PlatformInformation } from './PlatformInformation';
 
-// tslint:disable interface-name max-classes-per-file no-empty object-literal-shorthand no-angle-bracket-type-assertion
 export interface Package {
 	description: string;
 	url: string;
@@ -154,7 +153,6 @@ function downloadPackage(
 	status.setDetail(`Downloading package '${pkg.description}'...`);
 
 	return new Promise<any>((resolve, reject) => {
-		// tslint:disable-next-line: no-shadowed-variable
 		tmp.file({ prefix: 'package-' }, (err, path, fd, cleanupCallback) => {
 			if (err) {
 				return reject(new PackageError('Error from tmp.file', pkg, err));

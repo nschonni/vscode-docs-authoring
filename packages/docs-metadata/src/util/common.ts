@@ -15,7 +15,6 @@ export const output = window.createOutputChannel('docs-metadata');
 export const docsAuthoringDirectory = path.join(os.homedir(), 'Docs Authoring');
 export const metadataDirectory = path.join(docsAuthoringDirectory, 'metadata');
 
-// tslint:disable no-shadowed-variable radix
 export function setExtensionPath(path: string) {
 	extensionPath = path;
 }
