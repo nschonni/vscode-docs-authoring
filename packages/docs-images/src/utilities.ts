@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import { Result } from './result';
 
 export function getFileName(filePath: string | null): string {
-	return !!filePath ? filePath.replace(/^.*[\\\/]/, '') : '';
+	return filePath ? filePath.replace(/^.*[\\\/]/, '') : '';
 }
 
 export function getFileSize(filePath: string): number {
@@ -46,11 +46,11 @@ export function resultToString(result: Result): string {
 
 export function resultsToString(results: Result[]): string {
 	const resized = sum(results, r => (r.wasResized === true ? 1 : 0));
-	const beforeSum = sum(results, r => (!!r.originalSize ? r.originalSize : 0));
-	const afterSum = sum(results, r => (!!r.compressedSize ? r.compressedSize : 0));
+	const beforeSum = sum(results, r => (r.originalSize ? r.originalSize : 0));
+	const afterSum = sum(results, r => (r.compressedSize ? r.compressedSize : 0));
 	const count = results.length;
 	const reduction = calculatePercentReduction(beforeSum, afterSum);
-	const resizedMessage = !!resized ? ` (and resized ${resized})` : '';
+	const resizedMessage = resized ? ` (and resized ${resized})` : '';
 	const individualResults = results.map(r => `${resultToString(r)}`).join('\n');
 
 	return `${individualResults}\nCompressed ${count} images${resizedMessage} in total, from ${toHumanReadableString(

@@ -168,7 +168,7 @@ export async function search(
 		}
 	}
 
-	if (!!possibleLanguage) {
+	if (possibleLanguage) {
 		language = possibleLanguage.aliases[0];
 	}
 	if (!language) {
@@ -415,7 +415,7 @@ export async function findAndReplaceTargetExpressions(event: TextDocumentChangeE
 		) {
 			const document = event.document;
 			const content = document.getText();
-			if (!!content) {
+			if (content) {
 				const replacements: Replacements = [];
 				if (workspace.getConfiguration('editor').insertSpaces) {
 					const tabSize = (workspace.getConfiguration('editor').tabSize as number) || 4;

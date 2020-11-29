@@ -302,7 +302,7 @@ export function getFilesShowQuickPick(mediaType: MediaType, altText: string, opt
 					}
 				}
 
-				if (!!result) {
+				if (result) {
 					// Insert content into topic
 					insertContentToEditor(editor, result, true);
 					if (!isArt) {

@@ -1,5 +1,4 @@
 module.exports = {
-	root: true,
 	env: {
 		browser: false,
 		node: true,
@@ -118,8 +117,6 @@ module.exports = {
 		'@typescript-eslint/ban-ts-ignore': 'off',
 		'@typescript-eslint/prefer-string-starts-ends-with': 'off',
 		'@typescript-eslint/prefer-regexp-exec': 'off',
-		'no-unused-expressions': 'off',
-		'no-throw-literal': 'off',
 		'@typescript-eslint/no-unused-vars': 'off',
 		'import/no-unresolved': [2, { ignore: ['squirejs'] }],
 		'import/no-cycle': [2, { maxDepth: 10 }],

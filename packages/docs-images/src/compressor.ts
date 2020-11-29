@@ -238,7 +238,7 @@ export class ImageCompressor {
 			const results = await imagemin([filePath], options);
 			if (!!results && results.length) {
 				const result = results[0];
-				if (!!result) {
+				if (result) {
 					const tempPath = path.resolve(result.destinationPath);
 					fs.copyFileSync(tempPath, result.sourcePath);
 					fs.unlinkSync(tempPath);

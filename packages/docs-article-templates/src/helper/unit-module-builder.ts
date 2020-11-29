@@ -291,7 +291,7 @@ export function cleanupModule(generatedModule: string) {
 		const updatedModule = moduleContent
 			.replace('header: ', '')
 			.replace(`{badge}`, `uid: ${learnRepo}.${formattedModuleName}.badge`)
-			.replace(/  -/g, '-')
+			.replace(/ {2}-/g, '-')
 			.replace(/'/g, '')
 			.replace(`- uid: `, '  uid: ');
 		writeFileSync(generatedModule, updatedModule, 'utf8');

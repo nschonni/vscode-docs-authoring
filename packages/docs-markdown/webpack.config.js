@@ -1,5 +1,3 @@
-//@ts-check
-
 'use strict';
 
 const TerserPlugin = require('terser-webpack-plugin');

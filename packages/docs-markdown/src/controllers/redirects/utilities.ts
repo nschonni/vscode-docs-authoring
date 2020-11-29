@@ -94,7 +94,7 @@ export function redirectsToJson(
 	const omitDefaultJsonProperties = config.omitDefaultJsonProperties;
 	const replacer = (key: string, value: string) => {
 		return omitDefaultJsonProperties && key === RedirectDocumentId
-			? !!value
+			? value
 				? true
 				: undefined
 			: value;
@@ -146,7 +146,7 @@ export async function initiateRedirectCommand(): RedirectInitiation {
 				`Unable to update the master redirects, please open the "${RedirectFileName}" file then try again!`,
 				'Open File'
 			);
-			if (!!openFile) {
+			if (openFile) {
 				const document = await workspace.openTextDocument(file);
 				await window.showTextDocument(document);
 			}

@@ -65,7 +65,7 @@ export async function detectInvalidDocumentIdRedirects() {
 						return;
 					}
 
-					if (!!redirect.redirect_document_id) {
+					if (redirect.redirect_document_id) {
 						if (url.isExternalUrl) {
 							redirect.redirect_document_id = false;
 							fixes++;

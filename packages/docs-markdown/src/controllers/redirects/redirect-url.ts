@@ -26,7 +26,7 @@ export class RedirectUrl {
 	}
 
 	get filePath(): string {
-		if (!!this._filePath) {
+		if (this._filePath) {
 			return this._filePath;
 		}
 
